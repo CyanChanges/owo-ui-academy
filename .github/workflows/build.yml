@@ -13,9 +13,11 @@ jobs:
         # Use these Java versions
         java-version: [
             '17',    # Minimum supported by Minecraft
-            '21',
         ]
         java-distribution: [
+          'adopt-j9',
+          'adopt-hotspot',
+          'oracle',
           'temurin',
           'semeru',
         ]

@@ -15,7 +15,7 @@ jobs:
             '17',    # Minimum supported by Minecraft
         ]
         java-distribution: [
-          'adopt-j9',
+          'adopt-openj9',
           'adopt-hotspot',
           'oracle',
           'temurin',

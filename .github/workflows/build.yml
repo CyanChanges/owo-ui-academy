@@ -12,7 +12,9 @@ jobs:
       matrix:
         # Use these Java versions
         java: [
-            17    # Minimum supported by Minecraft
+            17,    # Minimum supported by Minecraft
+            21,
+            23
         ]
         # and run on both Linux and nothing
         os: [ubuntu-20.04]
@@ -26,7 +28,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: ${{ matrix.java }}
-          distrubution: semeru
+          distribution: semeru
       - name: Set Gradle Wrapper execute bit
         if: ${{ runner.os != 'Windows' }}
         run: chmod +x ./gradlew

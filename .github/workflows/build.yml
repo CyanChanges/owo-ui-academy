@@ -12,8 +12,8 @@ jobs:
       matrix:
         # Use these Java versions
         java-version: [
-            17,    # Minimum supported by Minecraft
-            21,
+            '17',    # Minimum supported by Minecraft
+            '21',
         ]
         java-distribution: [
           'oracle',
